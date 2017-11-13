@@ -1,2 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.page-box__top-bar {
+  height: 138px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.page-box__logo {
+  margin: 0;
+  height: 100%;
+}
+
+.page-box__logo--link {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100%;
+  color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-box__company {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.page-box__company__logo {
+  margin-right: 30px;
+}
+
+.page-box__company__logo--link {
+  color: #00369a;
+  text-decoration: none;
+}
+
+.page-box__company__advert {
+  background-color: #00369a;
+  height: 100px;
+  width: 110px;
+}
+
+.page-box__hero {
+  background-color: #f3f3f3;
+  height: 425px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.page-box__rectangle {
+  width: 210px;
+  height: 250px;
+  background: #ec3123;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ec3123), color-stop(49%, #ec3123), color-stop(100%, #8a231d));
+  background: linear-gradient(135deg, #ec3123 0%, #ec3123 49%, #8a231d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec3123', endColorstr='#8a231d', GradientType=1 );
+  position: relative;
+}
+
+.page-box__rectangle::after {
+  content: "";
+  width: 210px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background: #f3f3f3;
+  border-top-right-radius: 50px;
+}
+
+.page-box__rectangle--text {
+  color: #fff;
+  font-size: 36px;
+  display: block;
+  padding: 20px;
+}
 
 /*# sourceMappingURL=style.min.css.map */

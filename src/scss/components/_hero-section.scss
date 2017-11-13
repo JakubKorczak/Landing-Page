@@ -1,0 +1,28 @@
+.page-box__hero {
+    background-color: $col-background;
+    height: 425px;
+    display: flex;
+    align-items: center;
+}
+
+.page-box__rectangle {
+  width: 210px;
+  height: 250px;
+  @include box-gradient;
+  position: relative;
+}
+.page-box__rectangle::after {
+    content: "";
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    background: $col-background;
+    border-top-right-radius: 50px;
+}
+.page-box__rectangle--text {
+    color: #fff;
+    font-size: 36px;
+    display: block;
+    padding: 20px;
+}

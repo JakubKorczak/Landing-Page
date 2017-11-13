@@ -1,0 +1,40 @@
+.page-box__top-bar {
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-box__logo {
+    margin: 0;
+    height: 100%;
+}
+
+.page-box__logo--link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.page-box__company {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.page-box__company__logo {
+    margin-right: 30px;
+}
+
+.page-box__company__logo--link {
+    color: rgb(0, 54, 154);
+    text-decoration: none;
+}
+.page-box__company__advert {
+    background-color: rgb(0, 54, 154);
+    height: 100px;
+    width: 110px;
+}
