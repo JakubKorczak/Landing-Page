@@ -1,0 +1,63 @@
+.page-box__diagram {
+    height: 640px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-box__diagram__text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 865px;
+    height: 220px;
+}
+.diagram__text--header {
+    margin-top: 40px;
+}
+
+.page-box__diagram__chart {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.chart__left,
+.chart__right {
+  width: 555px;
+  height: 200px;
+  background: rgb(235,235,235);
+}
+.chart__left {
+    margin-right: 30px;
+}
+.chart__pipe {
+  width: 580px;
+  height: 120px;
+  border: 15px solid rgb(177,177,177);
+  border-top: transparent;
+  display: flex;
+  justify-content: center;
+}
+.chart__pipe--box {
+  width: 360px;
+  height: 130px;
+  background: rgb(177,177,177);
+  position: relative;
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #fff;
+}
+.chart__pipe--box--header {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+.chart__pipe--box--text {
+    font-size: 24px;
+}
