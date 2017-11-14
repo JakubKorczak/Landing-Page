@@ -17,6 +17,11 @@
     color: red;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 1s all;
+
+    &:hover {
+        color: $col-windows;
+    }
 }
 
 .page-box__company {
@@ -30,11 +35,23 @@
 }
 
 .page-box__company__logo--link {
-    color: rgb(0, 54, 154);
+    color: $col-windows;
     text-decoration: none;
+
+    transition: 1s all;
+
+    &:hover {
+        color: red;
+    }
 }
 .page-box__company__advert {
-    background-color: rgb(0, 54, 154);
+    background-color: $col-windows;
     height: 100px;
     width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
 }

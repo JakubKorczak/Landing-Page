@@ -26,13 +26,44 @@
 }
 .chart__left,
 .chart__right {
-  width: 555px;
+    display: flex;
+  width: 48%;
   height: 200px;
   background: rgb(235,235,235);
 }
 .chart__left {
     margin-right: 30px;
 }
+.diagram__chart--icon {
+    height: 100%;
+    flex-grow: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #fff;
+}
+.diagram__chart--list {
+    flex-grow: 6;
+    color: rgb(84, 84, 84);
+}
+.chart--header {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+.chart--list {
+    list-style: none;
+    padding: 0;
+}
+.chart--item {
+    padding: 5px 0;
+    font-size: 20px;
+}
+.chart--item::before {
+    content: "+";
+    margin-right: 4px;
+}
+
 .chart__pipe {
   width: 580px;
   height: 120px;

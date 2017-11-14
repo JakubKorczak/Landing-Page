@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hide {
+    visibility: hidden;
+    transition: .4s all;
+    opacity: 0;
+    position: relative;
+    right: -80px;
+}
+
+.show {
+    visibility: visible;
+    transition: .6s all;
+    opacity: 1;
+    right: 0;
+}

@@ -1,12 +1,12 @@
 .page-box__hero {
     background-color: $col-background;
     height: 425px;
-    display: flex;
-    align-items: center;
 }
 
 .page-box__hero--container {
     display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 .page-box__rectangle {
@@ -34,17 +34,44 @@
 .page-box__information {
     width: 465px;
     margin-left: 30px;
-    //color: #fff;
 }
 .page-box__information--text {
     font-size: 18px;
+    height: 110px;
+    width: 465px;
 }
 
 .page-box__btn {
     width: 210px;
     height: 30px;
     margin-top: 15px;
-    background: #fff;
-    border: #fff;
+    background: #f3f3f3;
+    border: 2px solid #fff;
     color: red;
+
+/* This code below was design by Andrew Spencer
+   His codepen: https://codepen.io/iam_aspencer/pen/xXQbvK */
+
+    transition: box-shadow 600ms cubic-bezier(.33,.11,.02,.99),
+              transform  600ms cubic-bezier(.33,.11,.02,.99);
+  &:hover {
+   box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+               0 1px  6px  rgba(0, 0, 0, .05),
+               0 8px  8px  rgba(0, 0, 0, .1),
+               0 16px 16px rgba(0, 0, 0, .1),
+               8px 32px 32px rgba(0, 0, 0, .15),
+               8px 64px 64px rgba(0, 0, 0, .15);
+
+    transform: scale(1.05)
+               translateY(-0.5rem);
+  }
+
+  &:active {
+   box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+               0 1px  6px  rgba(0, 0, 0, .05),
+               0 8px  8px  rgba(0, 0, 0, .1),
+               0 16px 16px rgba(0, 0, 0, .1),
+               8px 16px 16px rgba(0, 0, 0, .15),
+               8px 32px 32px rgba(0, 0, 0, .15);
+  }
 }

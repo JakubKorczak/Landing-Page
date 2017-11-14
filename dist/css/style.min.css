@@ -7,8 +7,23 @@ body {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
+}
+
+.hide {
+  visibility: hidden;
+  transition: .4s all;
+  opacity: 0;
+  position: relative;
+  right: -80px;
+}
+
+.show {
+  visibility: visible;
+  transition: .6s all;
+  opacity: 1;
+  right: 0;
 }
 
 .page-box__top-bar {
@@ -35,6 +50,11 @@ body {
   color: red;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 1s all;
+}
+
+.page-box__logo--link:hover {
+  color: #00369a;
 }
 
 .page-box__company {
@@ -52,26 +72,40 @@ body {
 .page-box__company__logo--link {
   color: #00369a;
   text-decoration: none;
+  transition: 1s all;
+}
+
+.page-box__company__logo--link:hover {
+  color: red;
 }
 
 .page-box__company__advert {
   background-color: #00369a;
   height: 100px;
   width: 110px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px;
 }
 
 .page-box__hero {
   background-color: #f3f3f3;
   height: 425px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
 }
 
 .page-box__hero--container {
   display: -webkit-box;
   display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .page-box__rectangle {
@@ -108,15 +142,32 @@ body {
 
 .page-box__information--text {
   font-size: 18px;
+  height: 110px;
+  width: 465px;
 }
 
 .page-box__btn {
   width: 210px;
   height: 30px;
   margin-top: 15px;
-  background: #fff;
-  border: #fff;
+  background: #f3f3f3;
+  border: 2px solid #fff;
   color: red;
+  /* This code below was design by Andrew Spencer
+   His codepen: https://codepen.io/iam_aspencer/pen/xXQbvK */
+  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), -webkit-transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
+  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
+  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), -webkit-transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
+}
+
+.page-box__btn:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+          transform: scale(1.05) translateY(-0.5rem);
+}
+
+.page-box__btn:active {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 16px 16px rgba(0, 0, 0, 0.15), 8px 32px 32px rgba(0, 0, 0, 0.15);
 }
 
 .page-box__diagram {
@@ -157,13 +208,55 @@ body {
 
 .chart__left,
 .chart__right {
-  width: 555px;
+  display: -webkit-box;
+  display: flex;
+  width: 48%;
   height: 200px;
   background: #ebebeb;
 }
 
 .chart__left {
   margin-right: 30px;
+}
+
+.diagram__chart--icon {
+  height: 100%;
+  -webkit-box-flex: 4;
+          flex-grow: 4;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 80px;
+  color: #fff;
+}
+
+.diagram__chart--list {
+  -webkit-box-flex: 6;
+          flex-grow: 6;
+  color: #545454;
+}
+
+.chart--header {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.chart--list {
+  list-style: none;
+  padding: 0;
+}
+
+.chart--item {
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+.chart--item::before {
+  content: "+";
+  margin-right: 4px;
 }
 
 .chart__pipe {

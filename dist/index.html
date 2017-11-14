@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
 </head>
 <body>
     <div class="page-box">
@@ -18,11 +19,13 @@
             <div class="page-box__company">
                 <h3 class="page-box__company__logo">
                     <a class="page-box__company__logo--link" href="">
-                        Windows Server
+                        <i class="icon-windows"></i> Windows Server
                     </a>
                 </h3>
                 <div class="page-box__company__advert">
-
+                    <div>Microsoft</div>
+                    <div>Windows Server</div>
+                    <div>2016 Datacenter</div>
                 </div>
             </div>
         </header>
@@ -35,31 +38,61 @@
                     <h2>
                         Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
                     </h2>
-                    <div class="page-box__information--text">
-                        Suspendisse a pellentesque dui, non felis.
-                        Maecenas malesuada elit lectus felis, malesuada ultricies.
-                        Curabitur et ligula. Ut molestie a,
-                        ultricies porta urna. Vestibulum commodo volutpat a,
-                        convallis ac, laoreet enim. Phasellus fermentum in, dolor.
-                        Pellentesque facilisis. Nulla imperdiet sit amet magna.
+                    <div class="page-box__information--text hide" id="infoText">
+                        <span>
+                            Suspendisse a pellentesque dui, non felis.
+                            Maecenas malesuada elit lectus felis, malesuada ultricies.
+                            Curabitur et ligula. Ut molestie a,
+                            ultricies porta urna. Vestibulum commodo volutpat a,
+                            convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+                            Pellentesque facilisis. Nulla imperdiet sit amet magna.
+                        </span>
                     </div>
-                    <button class="page-box__btn" type="button" name="button">Lorem ipsum >></button>
+                    <button class="page-box__btn" type="button" name="button" id="btnShow">
+                        Click me >>
+                    </button>
                 </div>
             </div>
         </section>
         <section class="page-box__diagram container">
             <div class="page-box__diagram__text">
                 <h2 class="diagram__text--header">Lorem ipsum dolor sit amet enim</h2>
-                Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
-                Maecenas malesuada elit lectus felis, malesuada ultricies.
-                Curabitur et ligula. Ut molestie a,
-                ultricies porta urna. Vestibulum commodo volutpat a,
-                convallis ac, laoreet enim. Phasellus fermentum in, dolor.
-                Pellentesque facilisis. Nulla imperdiet sit amet magna.
+                <span>
+                    Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+                    Maecenas malesuada elit lectus felis, malesuada ultricies.
+                    Curabitur et ligula. Ut molestie a,
+                    ultricies porta urna. Vestibulum commodo volutpat a,
+                    convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+                    Pellentesque facilisis. Nulla imperdiet sit amet magna.
+                </span>
             </div>
             <div class="page-box__diagram__chart">
-                <div class="chart__left"></div>
-                <div class="chart__right"></div>
+                <div class="chart__left">
+                    <div class="diagram__chart--icon">
+                        <i class="icon-cloud"></i>
+                    </div>
+                    <div class="diagram__chart--list">
+                        <h2 class="chart--header">Lorem</h2>
+                        <ul class="chart--list">
+                            <li class="chart--item">ipsum</li>
+                            <li class="chart--item">ipsum</li>
+                            <li class="chart--item">ipsum</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chart__right">
+                    <div class="diagram__chart--icon">
+                        <i class="icon-database"></i>
+                    </div>
+                    <div class="diagram__chart--list">
+                        <h2 class="chart--header">Lorem</h2>
+                        <ul class="chart--list">
+                            <li class="chart--item">ipsum</li>
+                            <li class="chart--item">ipsum</li>
+                            <li class="chart--item">ipsum</li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="chart__pipe">
                   <div class="chart__pipe--box">
                       <h2 class="chart__pipe--box--header">Hybridi IT</h2>
