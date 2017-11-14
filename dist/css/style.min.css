@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'dejavu';
+  src: url("../dejavu-sans/DejaVuSans.ttf");
+}
+
 * {
+  font-family: "dejavu";
   box-sizing: border-box;
 }
 
@@ -47,14 +53,6 @@ body {
   -webkit-box-align: center;
           align-items: center;
   height: 100%;
-  color: red;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 1s all;
-}
-
-.page-box__logo--link:hover {
-  color: #00369a;
 }
 
 .page-box__company {
@@ -91,13 +89,17 @@ body {
   -webkit-box-pack: justify;
           justify-content: space-between;
   color: #fff;
-  font-size: 14px;
+  font-size: 10px;
   padding: 5px;
 }
 
 .page-box__hero {
   background-color: #f3f3f3;
   height: 425px;
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-box__hero--container {
@@ -124,13 +126,13 @@ body {
   height: 40px;
   position: absolute;
   bottom: 0;
-  background: #f3f3f3;
+  background: #d4cab9;
   border-top-right-radius: 50px;
 }
 
 .page-box__rectangle--text {
   color: #fff;
-  font-size: 36px;
+  font-size: 32px;
   display: block;
   padding: 20px;
 }
@@ -138,10 +140,11 @@ body {
 .page-box__information {
   width: 465px;
   margin-left: 30px;
+  color: #fff;
 }
 
 .page-box__information--text {
-  font-size: 18px;
+  font-size: 15px;
   height: 110px;
   width: 465px;
 }
@@ -150,8 +153,8 @@ body {
   width: 210px;
   height: 30px;
   margin-top: 15px;
-  background: #f3f3f3;
-  border: 2px solid #fff;
+  background: #fff;
+  border: transparent;
   color: red;
   /* This code below was design by Andrew Spencer
    His codepen: https://codepen.io/iam_aspencer/pen/xXQbvK */
@@ -229,8 +232,6 @@ body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  font-size: 80px;
-  color: #fff;
 }
 
 .diagram__chart--list {

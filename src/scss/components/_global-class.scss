@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'dejavu';
+    src: url('../dejavu-sans/DejaVuSans.ttf');
+}
+
 * {
+    font-family: "dejavu";
     box-sizing: border-box;
 }
 

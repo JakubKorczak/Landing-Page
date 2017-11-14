@@ -27,9 +27,9 @@
 .chart__left,
 .chart__right {
     display: flex;
-  width: 48%;
-  height: 200px;
-  background: rgb(235,235,235);
+    width: 48%;
+    height: 200px;
+    background: rgb(235,235,235);
 }
 .chart__left {
     margin-right: 30px;
@@ -40,9 +40,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
-    color: #fff;
 }
+
 .diagram__chart--list {
     flex-grow: 6;
     color: rgb(84, 84, 84);

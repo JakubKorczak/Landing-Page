@@ -1,6 +1,10 @@
 .page-box__hero {
     background-color: $col-background;
     height: 425px;
+    background-image: url('../images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .page-box__hero--container {
@@ -21,12 +25,12 @@
     height: 40px;
     position: absolute;
     bottom: 0;
-    background: $col-background;
+    background: rgb(212, 202, 185);
     border-top-right-radius: 50px;
 }
 .page-box__rectangle--text {
     color: #fff;
-    font-size: 36px;
+    font-size: 32px;
     display: block;
     padding: 20px;
 }
@@ -34,9 +38,10 @@
 .page-box__information {
     width: 465px;
     margin-left: 30px;
+    color: #fff;
 }
 .page-box__information--text {
-    font-size: 18px;
+    font-size: 15px;
     height: 110px;
     width: 465px;
 }
@@ -45,8 +50,8 @@
     width: 210px;
     height: 30px;
     margin-top: 15px;
-    background: #f3f3f3;
-    border: 2px solid #fff;
+    background: #fff;
+    border: transparent;
     color: red;
 
 /* This code below was design by Andrew Spencer
