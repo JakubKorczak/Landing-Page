@@ -1,11 +1,22 @@
 @font-face {
-    font-family: 'dejavu';
+    font-family: 'DejaVu';
     src: url('../dejavu-sans/DejaVuSans.ttf');
+}
+@font-face {
+    font-family: "DejaVu";
+    src: url("../dejavu-sans/DejaVuSans-ExtraLight.ttf");
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "DejaVu";
+    src: url("../dejavu-sans/DejaVuSans-Bold.ttf");
+    font-weight: bold;
 }
 
 * {
-    font-family: "dejavu";
+    font-family: "DejaVu";
     box-sizing: border-box;
+    color: $col-font;
 }
 
 body {
@@ -30,4 +41,8 @@ body {
     transition: .6s all;
     opacity: 1;
     right: 0;
+}
+
+.hidden {
+    visibility: hidden;
 }

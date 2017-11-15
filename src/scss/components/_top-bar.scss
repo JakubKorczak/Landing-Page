@@ -20,6 +20,10 @@
     height: 100%;
     display: flex;
     align-items: center;
+
+    div {
+        color: #fff;
+    }
 }
 
 .page-box__company__logo {
@@ -31,8 +35,16 @@
     text-decoration: none;
     transition: 1s all;
 
+    i {
+        color: $col-windows;
+        transition: 1s all;
+    }
+
     &:hover {
         color: red;
+        i {
+            color: red;
+        }
     }
 }
 .page-box__company__advert {

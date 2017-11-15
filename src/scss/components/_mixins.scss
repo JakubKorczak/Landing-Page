@@ -1,0 +1,6 @@
+@mixin box-text--center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}

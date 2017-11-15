@@ -26,6 +26,9 @@
     position: absolute;
     bottom: 0;
     background: rgb(212, 202, 185);
+    background-image: url("../images/cover.png");
+    background-size: cover;
+    background-position-x: 17px;
     border-top-right-radius: 50px;
 }
 .page-box__rectangle--text {
@@ -38,12 +41,19 @@
 .page-box__information {
     width: 465px;
     margin-left: 30px;
-    color: #fff;
+
+    h2 {
+        color: #fff;
+    }
 }
 .page-box__information--text {
     font-size: 15px;
     height: 110px;
     width: 465px;
+
+    span {
+        color: #fff;
+    }
 }
 
 .page-box__btn {
@@ -53,6 +63,7 @@
     background: #fff;
     border: transparent;
     color: red;
+    cursor: pointer;
 
 /* This code below was design by Andrew Spencer
    His codepen: https://codepen.io/iam_aspencer/pen/xXQbvK */

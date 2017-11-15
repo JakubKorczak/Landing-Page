@@ -6,10 +6,7 @@
 }
 
 .page-box__diagram__text {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
+    @include box-text--center;
     padding-bottom: 40px;
     width: 865px;
     height: 220px;
@@ -81,13 +78,14 @@
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  color: #fff;
 }
 .chart__pipe--box--header {
     width: 100%;
     margin-bottom: 0;
     font-size: 30px;
+    color: #fff;
 }
 .chart__pipe--box--text {
     font-size: 24px;
+    color: #fff;
 }

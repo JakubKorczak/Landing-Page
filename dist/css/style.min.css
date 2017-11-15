@@ -1,11 +1,24 @@
 @font-face {
-  font-family: 'dejavu';
+  font-family: 'DejaVu';
   src: url("../dejavu-sans/DejaVuSans.ttf");
 }
 
+@font-face {
+  font-family: "DejaVu";
+  src: url("../dejavu-sans/DejaVuSans-ExtraLight.ttf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "DejaVu";
+  src: url("../dejavu-sans/DejaVuSans-Bold.ttf");
+  font-weight: bold;
+}
+
 * {
-  font-family: "dejavu";
+  font-family: "DejaVu";
   box-sizing: border-box;
+  color: #595959;
 }
 
 body {
@@ -30,6 +43,10 @@ body {
   transition: .6s all;
   opacity: 1;
   right: 0;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .page-box__top-bar {
@@ -63,6 +80,10 @@ body {
           align-items: center;
 }
 
+.page-box__company div {
+  color: #fff;
+}
+
 .page-box__company__logo {
   margin-right: 30px;
 }
@@ -73,7 +94,16 @@ body {
   transition: 1s all;
 }
 
+.page-box__company__logo--link i {
+  color: #00369a;
+  transition: 1s all;
+}
+
 .page-box__company__logo--link:hover {
+  color: red;
+}
+
+.page-box__company__logo--link:hover i {
   color: red;
 }
 
@@ -127,6 +157,9 @@ body {
   position: absolute;
   bottom: 0;
   background: #d4cab9;
+  background-image: url("../images/cover.png");
+  background-size: cover;
+  background-position-x: 17px;
   border-top-right-radius: 50px;
 }
 
@@ -140,6 +173,9 @@ body {
 .page-box__information {
   width: 465px;
   margin-left: 30px;
+}
+
+.page-box__information h2 {
   color: #fff;
 }
 
@@ -149,6 +185,10 @@ body {
   width: 465px;
 }
 
+.page-box__information--text span {
+  color: #fff;
+}
+
 .page-box__btn {
   width: 210px;
   height: 30px;
@@ -156,6 +196,7 @@ body {
   background: #fff;
   border: transparent;
   color: red;
+  cursor: pointer;
   /* This code below was design by Andrew Spencer
    His codepen: https://codepen.io/iam_aspencer/pen/xXQbvK */
   transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), -webkit-transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
@@ -283,17 +324,103 @@ body {
           justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  color: #fff;
 }
 
 .chart__pipe--box--header {
   width: 100%;
   margin-bottom: 0;
   font-size: 30px;
+  color: #fff;
 }
 
 .chart__pipe--box--text {
   font-size: 24px;
+  color: #fff;
+}
+
+.page-box__form {
+  background-color: #f3f3f3;
+  height: 685px;
+}
+
+.page-box__form--container {
+  max-width: 950px;
+}
+
+.page-box__form__text {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-box__form--header {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.page-box__form__ticket-box {
+  display: -webkit-box;
+  display: flex;
+}
+
+.form__ticket-box {
+  height: 150px;
+  width: 180px;
+  background-image: url("../images/ticket.png");
+  background-repeat: no-repeat;
+}
+
+.form__ticket-text {
+  width: 550px;
+  padding-top: 45px;
+}
+
+.form__ticket-line {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.main-form {
+  -webkit-box-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 360px;
+  margin: 0 auto;
+}
+
+.main-form-row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.main-form-row label {
+  padding-top: 10px;
+}
+
+.main-form-row input {
+  padding: 8px;
+  font-size: 15px;
+  border: 2px solid #d4d4d4;
+}
+
+.main-form-row button {
+  height: 50px;
+  margin-top: 14px;
+  background: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.min.css.map */

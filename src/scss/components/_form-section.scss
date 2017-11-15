@@ -1,0 +1,64 @@
+.page-box__form {
+    background-color: $col-background;
+    height: 685px;
+}
+.page-box__form--container {
+    max-width: 950px;
+}
+
+.page-box__form__text {
+    @include box-text--center;
+    margin: 0 auto;
+}
+.page-box__form--header {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.page-box__form__ticket-box {
+    display: flex;
+}
+.form__ticket-box {
+    height: 150px;
+    width: 180px;
+    background-image: url("../images/ticket.png");
+    background-repeat: no-repeat;
+}
+.form__ticket-text {
+    width: 550px;
+    padding-top: 45px;
+}
+.form__ticket-line {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.main-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin: 0 auto;
+}
+.main-form-row {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        padding-top: 10px;
+    }
+    input {
+        padding: 8px;
+        font-size: 15px;
+        border: 2px solid rgb(212, 212, 212);
+    }
+
+    button {
+        height: 50px;
+        margin-top: 14px;
+        background: red;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+}
