@@ -32,20 +32,18 @@
         <section class="page-box__hero">
             <div class="page-box__hero--container container">
                 <div class="page-box__rectangle">
-                  <span class="page-box__rectangle--text">Lorem ipsum dolor sit.</span>
+                  <span class="page-box__rectangle--text">Lorem <br> ipsum <br> dolor <br> sit.</span>
                 </div>
                 <div class="page-box__information">
                     <h2>
-                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
+                        Lorem ipsum dolor sit amet enim.
                     </h2>
                     <div class="page-box__information--text hide" id="infoText">
                         <span>
                             Suspendisse a pellentesque dui, non felis.
                             Maecenas malesuada elit lectus felis, malesuada ultricies.
                             Curabitur et ligula. Ut molestie a,
-                            ultricies porta urna. Vestibulum commodo volutpat a,
-                            convallis ac, laoreet enim. Phasellus fermentum in, dolor.
-                            Pellentesque facilisis. Nulla imperdiet sit amet magna.
+                            ultricies porta urna.
                         </span>
                     </div>
                     <button class="page-box__btn" type="button" name="button" id="btnShow">
@@ -118,28 +116,28 @@
                 </div>
                 <hr class="form__ticket-line">
                 <form class="main-form" id="mainForm">
-                    <div class="main-form-row">
-                        <label for="formName">Name</label>
-                        <input type="text" required placeholder="Enter your name" id="formName" name="formName" pattern="^.+$">
+                    <div class="main-form__row">
+                        <label class="main-form__label" for="formName">Name</label>
+                        <input class="main-form__input" type="text" required placeholder="Enter your name" id="formName" name="formName" pattern="^.+$">
                     </div>
-                    <div class="main-form-row">
-                        <label for="formSurname">Surname</label>
-                        <input type="text" required placeholder="Enter your surname" id="formSurname" name="formSurname" pattern="^.+$">
+                    <div class="main-form__row">
+                        <label class="main-form__label" for="formSurname">Surname</label>
+                        <input class="main-form__input" type="text" required placeholder="Enter your surname" id="formSurname" name="formSurname" pattern="^.+$">
                     </div>
-                    <div class="main-form-row">
-                        <label for="formSurname">Phone number</label>
-                        <input type="tel" required placeholder="Enter your phone number" id="formNumber" name="formNumber" pattern="[0-9]{9}" maxlength="9">
+                    <div class="main-form__row">
+                        <label class="main-form__label" for="formSurname">Phone number</label>
+                        <input class="main-form__input" type="tel" required placeholder="Enter your phone number" id="formNumber" name="formNumber" pattern="[0-9]{9}" maxlength="9">
                     </div>
-                    <div class="main-form-row">
-                        <label for="formEmail">Email</label>
-                        <input type="email" required placeholder="Enter your email" id="formEmail" name="formEmail" pattern="^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$">
+                    <div class="main-form__row">
+                        <label class="main-form__label" for="formEmail">Email</label>
+                        <input class="main-form__input" type="email" required placeholder="Enter your email" id="formEmail" name="formEmail" pattern="^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$">
                     </div>
-                    <div class="main-form-row">
-                        <label for="formSomething">Something</label>
-                        <input type="text" required placeholder="Enter some text" id="formSomething" name="formSomething">
+                    <div class="main-form__row">
+                        <label class="main-form__label" for="formSomething">Something</label>
+                        <input class="main-form__input" type="text" required placeholder="Enter some text" id="formSomething" name="formSomething">
                     </div>
-                    <div class="main-form-row">
-                        <button type="submit" class="btn">
+                    <div class="main-form__row">
+                        <button type="submit" class="main-form__btn">
                             Submit &rsaquo;&rsaquo;
                         </button>
                     </div>
@@ -147,6 +145,7 @@
             </div>
         </section>
     </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="js/script.min.js"></script>
 </body>
 </html>

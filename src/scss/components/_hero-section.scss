@@ -33,7 +33,7 @@
 }
 .page-box__rectangle--text {
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
     display: block;
     padding: 20px;
 }
@@ -44,6 +44,8 @@
 
     h2 {
         color: #fff;
+        font-size: 30px;
+        margin-bottom: 10px;
     }
 }
 .page-box__information--text {
@@ -53,6 +55,7 @@
 
     span {
         color: #fff;
+        font-size: 20px;
     }
 }
 
@@ -63,6 +66,7 @@
     background: #fff;
     border: transparent;
     color: red;
+    font-weight: bold;
     cursor: pointer;
 
 /* This code below was design by Andrew Spencer

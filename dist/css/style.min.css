@@ -165,7 +165,7 @@ body {
 
 .page-box__rectangle--text {
   color: #fff;
-  font-size: 32px;
+  font-size: 28px;
   display: block;
   padding: 20px;
 }
@@ -177,6 +177,8 @@ body {
 
 .page-box__information h2 {
   color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .page-box__information--text {
@@ -187,6 +189,7 @@ body {
 
 .page-box__information--text span {
   color: #fff;
+  font-size: 20px;
 }
 
 .page-box__btn {
@@ -196,6 +199,7 @@ body {
   background: #fff;
   border: transparent;
   color: red;
+  font-weight: bold;
   cursor: pointer;
   /* This code below was design by Andrew Spencer
    His codepen: https://codepen.io/iam_aspencer/pen/xXQbvK */
@@ -396,7 +400,7 @@ body {
   margin: 0 auto;
 }
 
-.main-form-row {
+.main-form__row {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -404,23 +408,24 @@ body {
           flex-direction: column;
 }
 
-.main-form-row label {
+.main-form__label {
   padding-top: 10px;
 }
 
-.main-form-row input {
+.main-form__input {
   padding: 8px;
   font-size: 15px;
   border: 2px solid #d4d4d4;
 }
 
-.main-form-row button {
+.main-form__btn {
   height: 50px;
   margin-top: 14px;
   background: red;
   color: #fff;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.min.css.map */

@@ -40,25 +40,24 @@
     width: 360px;
     margin: 0 auto;
 }
-.main-form-row {
+.main-form__row {
     display: flex;
     flex-direction: column;
-
-    label {
-        padding-top: 10px;
-    }
-    input {
-        padding: 8px;
-        font-size: 15px;
-        border: 2px solid rgb(212, 212, 212);
-    }
-
-    button {
-        height: 50px;
-        margin-top: 14px;
-        background: red;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-    }
+}
+.main-form__label {
+    padding-top: 10px;
+}
+.main-form__input {
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid rgb(212, 212, 212);
+}
+.main-form__btn {
+    height: 50px;
+    margin-top: 14px;
+    background: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
