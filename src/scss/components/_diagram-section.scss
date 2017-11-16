@@ -7,8 +7,8 @@
 
 .page-box__diagram__text {
     @include box-text--center;
-    padding-bottom: 40px;
-    width: 865px;
+    margin-bottom: 40px;
+    max-width: 865px;
     height: 220px;
 }
 .diagram__text--header {
@@ -88,4 +88,24 @@
 .chart__pipe--box--text {
     font-size: 24px;
     color: #fff;
+}
+
+@media (max-width: 749px) {
+    .chart__pipe {
+        display: none;
+    }
+    .chart__left,
+    .chart__right {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .chart__right {
+        margin-top: 10px;
+    }
+    .diagram__text--header {
+        margin: 0;
+    }
+    .page-box__diagram__text {
+        margin: 0;
+    }
 }

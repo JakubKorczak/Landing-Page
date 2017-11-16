@@ -123,6 +123,12 @@ body {
   padding: 5px;
 }
 
+@media (max-width: 749px) {
+  .page-box__company__logo {
+    display: none;
+  }
+}
+
 .page-box__hero {
   background-color: #f3f3f3;
   height: 425px;
@@ -171,7 +177,7 @@ body {
 }
 
 .page-box__information {
-  width: 465px;
+  max-width: 465px;
   margin-left: 30px;
 }
 
@@ -184,7 +190,7 @@ body {
 .page-box__information--text {
   font-size: 15px;
   height: 110px;
-  width: 465px;
+  max-width: 465px;
 }
 
 .page-box__information--text span {
@@ -218,6 +224,23 @@ body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 16px 16px rgba(0, 0, 0, 0.15), 8px 32px 32px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 749px) {
+  .page-box__rectangle {
+    display: none;
+  }
+  .page-box__information {
+    margin: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
 .page-box__diagram {
   height: 640px;
   display: -webkit-box;
@@ -236,8 +259,8 @@ body {
           justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  padding-bottom: 40px;
-  width: 865px;
+  margin-bottom: 40px;
+  max-width: 865px;
   height: 220px;
 }
 
@@ -342,6 +365,26 @@ body {
   color: #fff;
 }
 
+@media (max-width: 749px) {
+  .chart__pipe {
+    display: none;
+  }
+  .chart__left,
+  .chart__right {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .chart__right {
+    margin-top: 10px;
+  }
+  .diagram__text--header {
+    margin: 0;
+  }
+  .page-box__diagram__text {
+    margin: 0;
+  }
+}
+
 .page-box__form {
   background-color: #f3f3f3;
   height: 685px;
@@ -379,7 +422,7 @@ body {
 }
 
 .form__ticket-text {
-  width: 550px;
+  max-width: 550px;
   padding-top: 45px;
 }
 
@@ -426,6 +469,12 @@ body {
   border: none;
   cursor: pointer;
   font-weight: bold;
+}
+
+@media (max-width: 749px) {
+  .form__ticket-box {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map */
