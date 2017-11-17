@@ -49,6 +49,10 @@ body {
   visibility: hidden;
 }
 
+.error {
+  border-color: red !important;
+}
+
 .page-box__top-bar {
   height: 138px;
   display: -webkit-box;
@@ -469,6 +473,18 @@ body {
   border: none;
   cursor: pointer;
   font-weight: bold;
+}
+
+.main-form__message {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-weight: 800;
+}
+
+.main-form__message--error {
+  color: DarkRed;
 }
 
 @media (max-width: 749px) {

@@ -62,6 +62,15 @@
     font-weight: bold;
 }
 
+.main-form__message {
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+.main-form__message--error {
+    color: DarkRed;
+}
+
 @media (max-width: 749px) {
     .form__ticket-box {
         display: none;
