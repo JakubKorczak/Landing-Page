@@ -478,7 +478,7 @@ body {
 }
 
 .page-box__media {
-  height: 510px;
+  min-height: 510px;
 }
 
 .page-box__media__header {
@@ -536,9 +536,98 @@ body {
           justify-content: center;
 }
 
+@media (max-width: 749px) {
+  .page-box__media__container {
+    flex-wrap: wrap;
+  }
+  .page-box__media__video {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
 footer {
   height: 100px;
   background-color: #666666;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.footer__links--list {
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links--item {
+  padding: 0 15px;
+}
+
+.footer__links--item:first-of-type {
+  padding-left: 0;
+}
+
+.footer__links--item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer__links--item a:hover {
+  text-decoration: underline;
+}
+
+.footer__links--rights {
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer__social-media {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__social-media-item {
+  font-size: 35px;
+}
+
+.icon-facebook-official {
+  color: #3b5998;
+}
+
+.icon-twitter {
+  color: #00aced;
+}
+
+.icon-youtube-play {
+  color: #cc181e;
+}
+
+.icon-gplus-squared {
+  color: #d34836;
+}
+
+@media (max-width: 749px) {
+  .footer__social-media {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  .footer__social-media .hidden {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map */

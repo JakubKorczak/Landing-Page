@@ -1,5 +1,5 @@
 .page-box__media {
-    height: 510px;
+    min-height: 510px;
 }
 .page-box__media__header {
     height: 100px;
@@ -43,4 +43,15 @@
 .media__advert-diagram {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 749px) {
+    .page-box__media__container {
+        flex-wrap: wrap;
+    }
+    .page-box__media__video {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }

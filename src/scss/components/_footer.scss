@@ -2,3 +2,63 @@ footer {
     height: 100px;
     background-color: rgb(102, 102, 102);
 }
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__links--list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.footer__links--item {
+    padding: 0 15px;
+
+    &:first-of-type {
+        padding-left: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.footer__links--rights {
+    font-size: 12px;
+    color: #fff;
+}
+.footer__social-media {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__social-media-item {
+    font-size: 35px;
+}
+.icon-facebook-official {
+    color: $col-facebook;
+}
+.icon-twitter {
+    color: $col-twitter;
+}
+.icon-youtube-play {
+    color: $col-youtube;
+}
+.icon-gplus-squared {
+    color: $col-google;
+}
+
+@media (max-width: 749px) {
+    .footer__social-media {
+        justify-content: center;
+        .hidden {
+            display: none;
+        }
+    }
+}
