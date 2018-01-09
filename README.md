@@ -12,5 +12,5 @@
 [DEMO]: https://JakubKorczak.github.io
 [Jakub Korczak]: https://www.linkedin.com/in/jakub-korczak/
 
-## AuthorLinkedIN
+## Author
 *Author:* [*Jakub Korczak*][Jakub Korczak]
